@@ -1,0 +1,121 @@
+/* עיצוב ה-Navbar (סרגל הניווט) */
+.navbar {
+  background-color: black; /* צבע רקע שחור לסרגל הניווט */
+}
+
+/* עיצוב הקישורים ב-Navbar */
+.navbar .nav-link {
+  color: white; 
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* אנימציה חלקה לשינויים בצבעים */
+}
+
+/* עיצוב במעבר עכבר או כאשר הקישור פעיל */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: white; 
+  background-color: rgba(255, 255, 255, 0.3); 
+  border-radius: 15px; 
+}
+
+/* עיצוב כפתור הפתיחה של ה-Navbar במסכים קטנים */
+.navbar-toggler {
+  border-color: #ff3344; 
+  background-color: #ff3344; 
+}
+
+/* עיצוב ללוגו ב-Navbar */
+.navbar-logo {
+  height: 37px; 
+  order: -1; 
+  margin-left: auto; 
+}
+
+/* Media Query ללוגו במסכי מחשב גדולים */
+@media (min-width: 992px) {
+  .navbar-logo {
+    height: 40px; 
+    margin-left: 0; 
+    order: 0; 
+    position: absolute; 
+  }
+}
+
+/* עיצוב הכותרת הראשית */
+header {
+  color: white; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+}
+
+/* עיצוב כללי לכרטיסים */
+.card {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s ease-in-out; /* אנימציה עדינה לתזוזת הכרטיס */
+}
+
+/* עיצוב התמונה בתוך הכרטיס */
+.card img {
+  max-height: 150px; 
+  object-fit: cover; 
+}
+
+/* עיצוב גוף הכרטיס */
+.card-body {
+  flex-grow: 1; 
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+/* עיצוב כותרת הכרטיס */
+.card-title {
+  font-size: 1.2rem; 
+  text-align: center; 
+}
+
+/* Media Query לעיצוב כותרת הכרטיס במסכים גדולים */
+@media (min-width: 992px) {
+  .card-title {
+    font-size: 1.4rem; 
+  }
+}
+
+/* עיצוב טקסט בתוך הכרטיס */
+.card-text {
+  font-size: 0.9rem; 
+}
+
+/* עיצוב כפתור הורדה */
+.download-btn {
+  background-color: #ff3344; 
+  color: white; 
+  border: none; 
+}
+
+/* עיצוב כפתור הורדה במעבר עכבר */
+.download-btn:hover {
+  background-color: #ff6677; 
+  transition: background-color 0.3s ease-in-out; /* אנימציה חלקה של שינוי הרקע */
+}
+
+/* עיצוב עבור הצעות חיפוש */
+#suggestions {
+  z-index: 1000; 
+  background-color: white; 
+  border: 1px solid #ddd; 
+  max-height: 200px; 
+  overflow-y: auto; 
+}
+
+/* עיצוב הכפתורים בהצעות */
+#suggestions button {
+  text-align: left; 
+  border: none; 
+}
+
+/* עיצוב כפתורים בהצעות במעבר עכבר */
+#suggestions button:hover {
+  background-color: #f8f9fa; 
+}
